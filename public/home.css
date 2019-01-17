@@ -1,0 +1,289 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    background: black;
+    
+}
+
+nav ul li a {
+    color: black;
+    text-decoration: none;
+    padding: .8rem 1rem;
+    display: block;
+    line-height: 1;
+    color: #949bf4;
+}
+
+nav ul li {
+    border-bottom: 1px dotted white;
+    font-size: 20px;
+    font-family: 'EB Garamond', serif;
+    font-weight: 800;
+/*    font-family: 'Alegreya', serif;*/
+}
+
+h1 {
+    line-height: 0;
+    padding: .8rem 0rem;
+    text-align: center;
+    z-index: 0;
+}
+
+nav div:first-child h1,
+nav ul {
+    margin: 0;
+}
+
+nav
+{
+   position: fixed;
+   top: 0px;
+    width: 100%;
+    background: #000000;
+    z-index: 10;
+}
+
+.logo{
+    height: auto; 
+    width: 280px;
+}
+
+
+nav ul li a:hover {
+    background: rgba(230, 98, 0, 0.72);
+}
+
+nav
+{
+   position: fixed;
+   top: 0px;
+    width: 100%;
+}
+
+
+/* media queries for diff screen sizes*/
+
+@media only screen and (min-width: 30em) {
+    nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        z-index: 10;
+    }
+
+    nav ul {
+        display: flex;
+        align-items: center;
+        background: none;
+        flex-wrap: wrap;
+        margin-right: 40px;
+    }
+
+    nav div:first-child h1 {
+        padding: 0;
+        margin: 0 1rem;
+    }
+
+    nav div:first-child img {
+        height: 90px;
+    }
+
+    nav ul li {
+        border-bottom: none;
+        flex: 1 0 auto;
+    }
+
+    nav ul li a {
+        padding: 1.2rem 1rem;
+    }
+
+
+}
+
+
+
+
+
+
+#banner {
+    background-image: url("https://image.ibb.co/cg1fmT/weather.gif");
+/*  Original here   https://dribbble.com/shots/1389791*/
+    height: 300px;
+    padding-top: 30px;
+    /*this is the main component of the parallax  which ive removed check cv project*/
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 1500px 650px;
+    margin-top: 90px;
+    /* to get the gif to fit*/
+}
+
+#banner .header {
+    /*this still isnt responsive. It breaks when you go to cell phone size*/
+    position: absolute;
+    text-align: center;
+    top: 320px;
+    width: 100%;
+    margin: 0 auto;
+    color: #000000;
+    font-family: 'EB Garamond', serif;
+    font-weight: 800;
+}
+
+
+#banner{
+    background-color: black;
+}
+
+.h3-text{
+    
+/*    https://css-tricks.com/adding-stroke-to-web-text/*/
+}
+
+.welcome {
+    padding: 40px;
+    background-color: rgba(255, 255, 255, 0.39);
+    color: #000000;
+    text-align: center;
+    font-family: "Verdana", serif;
+}
+
+h5{
+    color: ;
+}
+
+.welcome-msg{
+    color:black;
+}
+
+@media only screen and (max-width: 900px) {
+    
+    #banner{
+       margin-top: 116px; 
+    }
+    
+    .header {
+        padding-top: 45px;
+    }
+    
+}
+
+
+@media only screen and (max-width: 660px) {
+    
+    #banner{
+       margin-top: 176px; 
+    }
+    
+    .header {
+        padding-top: 90px;
+    }
+    
+}
+
+@media only screen and (max-width: 480px) {
+    
+    #banner{
+       margin-top: 290px; 
+    }
+    
+    .header {
+        padding-top: 220px;
+    }
+    
+}
+/*im gonna try to use flexbox here instead of a grid
+.grid{
+    
+}
+*/
+
+.flex-container .f-box {
+
+    margin: 10px;
+    flex: 1 0 200px;
+    height: 200px;
+    /*background-color: skyblue;*/
+    padding-top: 50px;
+    border: solid rgb(51,73,95);
+    font-family: "Verdana", serif;
+    background-color: rgba(255, 255, 255, 0.39);
+    border-radius: 40px;
+
+
+}
+
+.flex-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+
+.fa-icon {
+    font-size:2.5em; 
+}
+
+.sun {
+    color: rgb(237, 182, 0);
+}
+
+.location {
+    color: rgb(220,64,61);
+}
+
+.glass{
+    color: #0074bc;
+}
+
+
+.f-box-text{
+    padding: 8px;
+}
+
+.copyright {
+    padding: 15px;
+    background-color: rgba(0, 17, 57, 0.8);
+    text-align: center;
+    font-family: "Verdana", serif;
+    font-weight: bold;
+    display: block;
+
+    left: 0;
+    bottom: 0;
+    overflow: hidden;
+}
+
+/*FOR BG VIDEO*/
+
+.bg-video {
+    position: absolute;
+    top:0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    overflow: hidden;
+}
+
+.bg-video-content {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    
+}
+
+
+.weather-container {
+    position: relative;
+    background: rgba(137, 137, 137, 0); 
+/*    ^instead of using opacity in .bg-video*/
+}

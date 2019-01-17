@@ -1,0 +1,61 @@
+<!DOCTYPE.html>
+<html>
+
+<title> Wonderful Weather App </title>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width-device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="/location.css">
+    <link href="https://fonts.googleapis.com/css?family=Alegreya:900|Arvo:700" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.11/css/all.css" integrity="sha384-p2jx59pefphTFIpeqCcISO9MdVfIm4pNnsL08A6v5vaQc4owkQqxMV8kg4Yvhaw/" crossorigin="anonymous">
+  
+
+</head>
+
+<body>
+    <nav>
+        <div class="logo-container">
+           <a href="/"><img class="logo" src="https://i.ibb.co/ZhjBXz9/Sky-Sight.jpg"> </a>
+        </div>
+
+        <ul>
+            <li> <a href="/location"> My Weather</a> </li>
+            <li> <a href="/current"> Current </a> </li>
+            <li> <a href="/forecast"> Forecast</a> </li>
+            <li><a target="_blank" href="https://openweathermap.org/"> OpenWeatherMap </a></li>
+        </ul>
+    </nav>
+
+    <div class="today">
+        <h2>WEATHER AT MY LOCATION </h2>
+    </div>
+    <div class="weather-container">
+       
+       <div id="dynamic-bg" class="bg-img">
+        <img  class="bg-img-content" >
+       </div>
+       
+        <div class="text-box">
+            <h3 class="h3-text"> Automatic Weather Detection</h3>
+            <div class="blocked-cont fadeout">
+                <h6 class="blocked"> SOME AD BLOCKERS MAY PREVENT AUTO DETECTION.</h6>
+                <h6 class="blocked">PLEASE DISABLE IT AND TRY AGAIN</h6> 
+            </div>
+        </div>
+
+        <div id="responseField" class="response-field">
+        </div>
+    </div>
+    <div class="copyright">
+        <p>Copyright &copy; SKY SIGHT </p>
+    </div>
+    
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.js "></script>
+    <script src="location.js">
+    </script>
+
+
+</body>
+
+</html>

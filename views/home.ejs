@@ -1,0 +1,97 @@
+<!DOCTYPE.html>
+<html>
+
+<title> Sky Sight </title>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width-device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="/home.css">
+    <link href="https://fonts.googleapis.com/css?family=Alegreya:900|Arvo:700" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.11/css/all.css" integrity="sha384-p2jx59pefphTFIpeqCcISO9MdVfIm4pNnsL08A6v5vaQc4owkQqxMV8kg4Yvhaw/" crossorigin="anonymous">
+   <link href="https://fonts.googleapis.com/css?family=EB+Garamond:700,800" rel="stylesheet">
+</head>
+
+<body>
+    <nav>
+        <div clsss="logo-container">
+            <a href="/"> <img class="logo" src="https://i.ibb.co/ZhjBXz9/Sky-Sight.jpg"> </a>
+<!--
+            https://i.ibb.co/LZQddvP/Cloud-icon.jpg
+            https://i.ibb.co/wch8NLf/Cloud-plain-logo.jpg
+      
+       https://preview.ibb.co/nz2WG7/Cloud_puke_weather2.jpg
+-->
+        </div>
+
+        <ul>
+            <li> <a href="/location"> My Weather</a> </li>
+            <li> <a href="/current"> Current </a> </li>
+            <li> <a href="/forecast"> Forecast</a> </li>
+            <li><a target="_blank" href="https://openweathermap.org/"> OpenWeatherMap </a></li>
+        </ul>
+    </nav>
+
+    <div id="banner">
+        <div class="header">
+            <h1>GET THE WEATHER </h1>
+            <br>
+            <h2> From anywhere in the world! </h2>
+        </div>
+    </div>
+    <!-- a test-->
+
+    <div class="weather-container">
+
+        <div class="bg-video">
+            <video class="bg-video-content" autoplay muted loop>
+               <source src="Cloud_vid/Clouds_Lapse.mp4" type="video/mp4">
+               <source src="Cloud_vid/Clouds_Lapse.webm" type="video/webm">
+               Your browser is not supported!
+           </video>
+        </div>
+        <div class="welcome">
+            <h3 class="h3-text">Welcome to Sky Sight!</h3>
+            <br>
+            <div class="welcome-msg">This web based application fetches weather data using the API from OpenWeatherMap and displays it to you. You will also be able to check the current weather from any city in the world and even get a 5 day forecast by clicking on the 'Forecast' button above.</div>
+        </div>
+
+        <div class="flex-container">
+
+            <div class="f-box">
+
+                <h3>AUTO DETECTION</h3>
+                <br>
+                <div class="fa-icon location"> <i class="fas fa-map-marker"> </i> </div>
+                <br>
+                <p class="f-box-text" >Weather details from your current location without any extra input</p>
+            </div>
+
+            <div class="f-box">
+                <h3>API CALLS</h3>
+                <br>
+                <div class="fa-icon sun"> <i class="far fa-sun"></i> </div>
+                <br>
+                <p class="f-box-text" >Seamless intergration of IP lookup and weather APIs to cater to all your weather needs</p>
+            </div>
+
+            <div class="f-box">
+
+                <h3>SEARCH FEATURES</h3>
+                <br>
+                <div class="fa-icon glass"> <i class="fas fa-search"></i> </div>
+                <br>
+                <p class="f-box-text" > Look up current and 5 day forecasts from around the globe </p>
+            </div>
+        </div>
+
+    </div>
+    <div class="copyright">
+        <p>Copyright &copy; SKY SIGHT </p>
+    </div>
+
+
+</body>
+
+
+</html>
