@@ -1,14 +1,14 @@
 const apiKey = 'd0f81f2bec9dfb355fdef3164115793f';
 //const url = 'http://api.openweathermap.org/data/2.5/weather?q=';
 
-const url = 'http://api.openweathermap.org/data/2.5/weather?';
+const url = '//api.openweathermap.org/data/2.5/weather?';
 
 
 let lat;
 let lon;
 
 
-$.getJSON('http://gd.geobytes.com/GetCityDetails?callback=?', function (data) {
+$.getJSON('//gd.geobytes.com/GetCityDetails?callback=?', function (data) {
     //    console.log(JSON.stringify(data));
     console.log("This is the IP location API ============>" + JSON.stringify(data, null, 2));
     let a = (JSON.stringify(data.geobyteslatitude));

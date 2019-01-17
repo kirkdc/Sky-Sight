@@ -1,6 +1,6 @@
 //http://api.openweathermap.org/data/2.5/forecast?q=Mumbai&mode=xml&units=metric&appid=d0f81f2bec9dfb355fdef3164115793f
 const apiKey = 'd0f81f2bec9dfb355fdef3164115793f';
-const url = 'http://api.openweathermap.org/data/2.5/forecast?q=';
+const url = '//api.openweathermap.org/data/2.5/forecast?q=';
 
 
 
