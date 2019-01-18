@@ -8,7 +8,7 @@ let lat;
 let lon;
 
 
-$.getJSON('//gd.geobytes.com/GetCityDetails?callback=?', function (data) {
+$.getJSON('http://gd.geobytes.com/GetCityDetails?callback=?', function (data) {
     //    console.log(JSON.stringify(data));
     console.log("This is the IP location API ============>" + JSON.stringify(data, null, 2));
     let a = (JSON.stringify(data.geobyteslatitude));
