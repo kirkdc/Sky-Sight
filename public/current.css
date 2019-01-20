@@ -56,6 +56,7 @@ nav
 
 nav ul li a:hover {
     background: rgba(230, 98, 0, 0.72);
+    border-radius: 30px;
 }
 
 nav
@@ -316,31 +317,16 @@ width: 100%;
 
 
 
-
-
-
-
 .copyright {
     padding: 15px;
-    background-color: rgba(0, 17, 57, 0.8);
+    background-color: black;
     text-align: center;
     font-family: "Verdana", serif;
     font-weight: bold;
     display: block;
-
+    color: #949bf4;
     left: 0;
     bottom: 0;
     overflow: hidden;
 }
 
-/*.copyright {
-    padding: 15px;
-    background-color: rgba(0, 17, 57, 0.8);
-    text-align: center;
-    font-family: "Verdana", serif;
-    font-weight: bold;
-    position: fixed;
-    bottom: 0;
-    display: block;
-    width: 100%;
-}*/
