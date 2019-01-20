@@ -8,13 +8,13 @@ let lat;
 let lon;
 
 
-$.getJSON('http://gd.geobytes.com/GetCityDetails?callback=?', function (data) {
+$.getJSON('https://ipapi.co/json/', function (data) {
     //    console.log(JSON.stringify(data));
     console.log("This is the IP location API ============>" + JSON.stringify(data, null, 2));
-    let a = (JSON.stringify(data.geobyteslatitude));
-    let b = (JSON.stringify(data.geobyteslongitude));
-    let c = (JSON.stringify(data.geobytesregion));
-    let d = (JSON.stringify(data.geobytescountry));
+    let a = (JSON.stringify(data.latitude));
+    let b = (JSON.stringify(data.longitude));
+    let c = (JSON.stringify(data.region));
+    let d = (JSON.stringify(data.country_name));
 
     lat = a.replace(/\"/g, "");
     lon = b.replace(/\"/g, "");

@@ -45,7 +45,7 @@ nav
    top: 0px;
     width: 100%;
     background: #000000;
-    z-index: 10;
+    z-index: 100;
 }
 
 .logo{
@@ -56,6 +56,7 @@ nav
 
 nav ul li a:hover {
     background: rgba(230, 98, 0, 0.72);
+    border-radius: 30px;
 }
 
 nav
@@ -73,7 +74,7 @@ nav
         display: flex;
         justify-content: space-between;
         align-items: center;
-        z-index: 10;
+        z-index: 100;
     }
 
     nav ul {
@@ -107,9 +108,6 @@ nav
 
 
 
-
-
-
 #banner {
     background-image: url("https://image.ibb.co/cg1fmT/weather.gif");
 /*  Original here   https://dribbble.com/shots/1389791*/
@@ -127,12 +125,13 @@ nav
     /*this still isnt responsive. It breaks when you go to cell phone size*/
     position: absolute;
     text-align: center;
-    top: 320px;
+    top: 230px;
     width: 100%;
     margin: 0 auto;
     color: #000000;
     font-family: 'EB Garamond', serif;
     font-weight: 800;
+    z-index: 99 !important;
 }
 
 
@@ -164,11 +163,11 @@ h5{
 @media only screen and (max-width: 900px) {
     
     #banner{
-       margin-top: 116px; 
+       margin-top: 90px; 
     }
     
     .header {
-        padding-top: 45px;
+        padding-top: 18px;
     }
     
 }
@@ -177,11 +176,11 @@ h5{
 @media only screen and (max-width: 660px) {
     
     #banner{
-       margin-top: 176px; 
+       margin-top: 116; 
     }
     
     .header {
-        padding-top: 90px;
+        padding-top: 7px;
     }
     
 }
@@ -189,11 +188,11 @@ h5{
 @media only screen and (max-width: 480px) {
     
     #banner{
-       margin-top: 290px; 
+       margin-top: 291px; 
     }
     
     .header {
-        padding-top: 220px;
+        padding-top: 12px;
     }
     
 }
@@ -251,12 +250,12 @@ h5{
 
 .copyright {
     padding: 15px;
-    background-color: rgba(0, 17, 57, 0.8);
+    background-color: black;
     text-align: center;
     font-family: "Verdana", serif;
     font-weight: bold;
     display: block;
-
+    color: #949bf4;
     left: 0;
     bottom: 0;
     overflow: hidden;
