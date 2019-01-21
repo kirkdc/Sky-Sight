@@ -6,3 +6,17 @@ $("document").ready(function() {
   
 	$('#youtube').tubular(options); 
 }); 
+
+let nav = false;
+
+        function show_hide_nav(id) {
+            let navbar = document.getElementById(id);
+
+            if (nav == false) {
+                navbar.style.display = "block";
+                nav = true;
+            } else {
+                navbar.style.display = "none";
+                nav = false;
+            }
+        }

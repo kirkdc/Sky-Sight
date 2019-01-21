@@ -67,6 +67,14 @@ nav
 }
 
 
+    #res_btn {
+        width: 50px;
+        height: 50px;
+        float: right;
+        display: none;
+        margin-right: 10px;
+    }
+
 /* media queries for diff screen sizes*/
 
 @media only screen and (min-width: 30em) {
@@ -188,12 +196,31 @@ h5{
 @media only screen and (max-width: 480px) {
     
     #banner{
-       margin-top: 291px; 
+       margin-top: 156px; 
     }
     
     .header {
         padding-top: 12px;
     }
+    
+    
+    .today {
+        padding-top: 112;
+    }
+    
+    #res_btn {
+    display: block;
+    position: relative;
+    top: -80px;
+    height: 50%;
+    width:auto;
+    cursor: pointer;
+    }
+    
+    
+    #navbar {
+   display: none;
+}
     
 }
 /*im gonna try to use flexbox here instead of a grid

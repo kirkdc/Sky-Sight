@@ -176,9 +176,18 @@ function searchBtn() {
     return false;
 }
 
-/*things to improve on
-1) get the highlights when hover over banner to fill the whole banner
-2) Press enter on keyboard === button click. How do i do this
-3) Print an error message when the search box is left empty. Wrong name of country is put in
-4)Refresh the page when the user asks for another city
-5)Put the copywrite logo at the bottom of the forecast and current pages without overlap*/
+
+let nav = false;
+
+        function show_hide_nav(id) {
+            let navbar = document.getElementById(id);
+
+            if (nav == false) {
+                navbar.style.display = "block";
+                nav = true;
+            } else {
+                navbar.style.display = "none";
+                nav = false;
+            }
+        }
+

@@ -66,6 +66,13 @@ nav
     width: 100%;
 }
 
+    #res_btn {
+        width: 50px;
+        height: 50px;
+        float: right;
+        display: none;
+        margin-right: 10px;
+    }
 
 /* media queries for diff screen sizes*/
 
@@ -134,9 +141,23 @@ nav
 
 @media only screen and (max-width: 480px) {
     
-    .today {
-        padding-top: 220px;
+.today {
+        padding-top: 112;
     }
+    
+    #res_btn {
+    display: block;
+    position: relative;
+    top: -80px;
+    height: 50%;
+    width:auto;
+    cursor: pointer;
+    }
+    
+    
+    #navbar {
+   display: none;
+}
     
     .blocked-cont {
     background-color: rgba(242, 242, 170, 0.49);

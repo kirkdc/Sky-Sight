@@ -89,57 +89,16 @@ $.getJSON('https://ipapi.co/json/', function (data) {
 
 });
 
-//let changeBg = function (background) {
-//    if (id <= 299) {
-//        console.log("THUNDERSTORM");
-//    } else if (id <= 399) {
-//        console.log("DRIZZLE");
-//    } else if (id <= 599) {
-//        console.log("RAIN");
-//    } else if (id <= 699) {
-//        console.log("SNOW");
-//    } else if (id <= 799) {
-//        console.log("SMOKE");
-//    } else if (id == 800) {
-//        console.log("CLEAR");
-//    } else {
-//        console.log("CLOUDS")
-//    }
-//}
-//
-//let id = response.weather.id;
-//changeBg(id);
+let nav = false;
 
+        function show_hide_nav(id) {
+            let navbar = document.getElementById(id);
 
-
-//CHANGING BACKGROUNDS BASED ON CODE weather.id
-//
-//if weather.id >=200 && < 299 then Thunderstorm
-//
-//else if weather.id >=300 && < 399 then 
-//Drizzle
-//
-//else if weather.id >=500 && < 599 then 
-//Rain
-//
-//else if weather.id >=700 && < 799 then 
-//Hazy
-//
-//else if weather.id ===800  
-//Clear 
-//
-//else if weather.id >=801 && < 899 then 
-//Cloudy
-
-//$(function(){
-//$.get("https://ipinfo.io", function(data) {
-//  console.log(data);
-//})  
-//})
-
-//$.get("https://ipinfo.io/json", function(response) {
-//  console.log(response.ip, response.country);
-//}, "jsonp")
-
-
-// https://ipinfo.io/json - this will get your ip address
+            if (nav == false) {
+                navbar.style.display = "block";
+                nav = true;
+            } else {
+                navbar.style.display = "none";
+                nav = false;
+            }
+        }
