@@ -133,7 +133,7 @@ nav
     /*this still isnt responsive. It breaks when you go to cell phone size*/
     position: absolute;
     text-align: center;
-    top: 230px;
+    top: 322px;
     width: 100%;
     margin: 0 auto;
     color: #000000;
@@ -175,7 +175,7 @@ h5{
     }
     
     .header {
-        padding-top: 18px;
+        padding-top: 10px;
     }
     
 }
@@ -184,11 +184,11 @@ h5{
 @media only screen and (max-width: 660px) {
     
     #banner{
-       margin-top: 116; 
+       margin-top: 172px; 
     }
     
     .header {
-        padding-top: 7px;
+        padding-top: 86px;
     }
     
 }
@@ -200,7 +200,7 @@ h5{
     }
     
     .header {
-        padding-top: 12px;
+        padding-top: 66px;
     }
     
     
