@@ -75,6 +75,12 @@ nav
         margin-right: 10px;
     }
 
+
+nav > ul > li {
+    text-transform: uppercase;
+}
+
+
 /* media queries for diff screen sizes*/
 
 @media only screen and (min-width: 30em) {
